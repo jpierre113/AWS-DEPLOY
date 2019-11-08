@@ -306,20 +306,19 @@ After you've added this filter please commit your code and push it to `github`!
 2. On the top right of the navigation menu, make sure that **N. Virginia** is selected as the availability zone. 
 3. Click on **AMIs** on the left hand side. 
 4. We'll want to select a `Ubuntu AMI` for our server.
-5. Select `16.04` version or the latest `LTS` and click on the "Launch" action button. 
-6. Select the instance size with the resources that you'll need. If you're unsure, use **t2.large**. Click on the **Next: Configure Instance Details** button.
-7. For "Network", choose the default
-8. For "Subnet", choose the default
-9. [Optional] If you want to select an IAM role at this time do it now, it's not something you can change later on.
-10. Click on the **Next: Add Storage** button and select 16GB 
-11. Click on the **Next: Add Tags** button.
-12. Add any tags that will help you search for your instance: 
+5. Select the instance size with the resources that you'll need. If you're unsure, use **t1.small**. Click on the **Next: Configure Instance Details** button.
+6. For "Network", choose the default
+7. For "Subnet", choose the default
+8. [Optional] If you want to select an IAM role at this time do it now, it's not something you can change later on.
+9. Click on the **Next: Add Storage** button
+10. Click on the **Next: Add Tags** button.
+11. Add any tags that will help you search for your instance: 
   - **Name**: [Enter a name for your server, e.g. `spring-microservices-server`] 
-13. Click on the **Next: Configure Security Group** button.
-14. **Open**  TCP ports `22`,`8761`,`8080` or `80`, and `5431`. 
-15. Click on the **Review and Launch** button.
-16. Review your settings and click on the **Launch** button.
-17. When prompted to select an existing key pair or create a new key pair. 
+12. Click on the **Next: Configure Security Group** button.
+13. **Open**  TCP ports `22`,`8761`,`8080` or `80`, and `5431`. 
+14. Click on the **Review and Launch** button.
+15. Review your settings and click on the **Launch** button.
+16. When prompted create a new key pair. 
 
 
 **Congratulations, you now have a running instance on AWS!**
